@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Yuji+Mai&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: capitalize;
+  overflow: hidden;
+  font-family: "Faculty Glyphic", serif;
+}
+
+button {
+  border: none;
+  height: 40px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #531366;
+  color: white;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 5px; 
+  border-radius: 20px;
+}
+
+h1 {
+  color: aliceblue;
+  background: rgb(88, 84, 84);
+  height: 50px;
+  width: 450px;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 28%; 
+  border-radius: 20px;
+}
+
+#rock {
+  background: rgba(30, 184, 255, 0.767);
+  /* margin-right: 45px; */
+}
+
+#paper {
+  background: rgba(255, 166, 0, 0.534);
+  /* margin-right: 45px; */
+}
+
+#scissor {
+  background: #b37070cc;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  margin-left: 30%; 
+  margin-right: 30%;
+  margin-bottom: 70px;
+}
+
+.choice {
+  height: 110px;
+  width: 110px;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+}
+
+.score {
+  height: 70px; 
+  width: 70px; 
+}
+
+i {
+  margin-top: 36%;
+  font-size: 200%;
+}
+
+.choice-3 {
+  height: 120px;
+  width: 120px;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice-1 {
+  height: 120px;
+  width: 120px;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice-2 {
+  height: 120px;
+  width: 120px;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.choice-1:hover, .choice-2:hover, .choice-3:hover {
+  height: 120px;
+  width: 120px;
+  background: #1c2a41;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-board {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+}
+
+.score {
+  height: 80px; 
+  width: 70px; 
+  background: #0e336e;
+  border-radius: 20%;
+}
+
+.comp-text, .user-text {
+  background: #d6d3d3;
+  width: 65%;
+  height: 30%;
+  padding-top: 3px;
+  margin-left: 11px;
+  border-radius: 10px;
+  color: #1c2a41;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 67%;
+  height: 33%;
+  padding-bottom: 2px;
+}
+
+.comp-text {
+  margin-left: 9px;
+  width: 75%;
+  height: 33%;
+  padding-bottom: 2px;
+}
+.score-1 {
+  margin-right: 20px;
+}
+
+#user-score, #comp-score {
+  margin-top: 9px;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-family: "Lato", sans-serif;
+}
+
+.msg-container {
+  background: rgb(22, 22, 95)  ;
+  height: 50px;
+  color: #fff;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  margin-left: 31.5%; 
+  margin-top: 40px;
+}
+
+@media  (min-width: 0px) and (max-width: 428px)  {
+  button {
+    margin-left: 10px;
+  }
+
+  .choices {
+    margin-top: 150px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .choice {
+    height: 90px;
+    width: 90px;
+  }
+
+  .choice-1, .choice-2, .choice-3 {
+    height: 100px;
+    width: 100px;
+  }
+
+  .choice-1 {
+    margin-left: 5px;
+  }
+
+  .choice-3 {
+    margin-right: 5px;
+  }
+
+  .choice-1:hover, .choice-2:hover, .choice-3:hover {
+    height: 100px;
+    width: 100px;
+  }
+
+  h1 {
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 19px;
+    left: 0;
+    height: 100px;
+  }
+
+  .msg-container {
+    margin-left: 32px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 429px) and (max-width:800px) {
+  h1 {
+    left: 190px;
+    top: 50px;
+  }
+
+  .choice-1, .choice-2, .choice-3 {
+    margin-top: 50px;
+  }
+
+  .choices {
+    margin-left: 170px;
+    margin-right: 150px;
+  }
+
+  .msg-container {
+    margin-left: 200px;
+  }
+}
